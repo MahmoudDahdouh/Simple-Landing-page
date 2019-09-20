@@ -8,7 +8,80 @@ body{
 .container{
     padding: 64px
 }
-
 .header{
     text-align: center
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column-66{
+    float: left;
+    width: 66.6666666666%;
+    padding: 20px;
+}
+.column-33{
+    float: left;
+    width: 33.33333333%;
+    padding: 20px;
+}
+.button{
+    border: 4px solid #4caf50;
+    border-radius: 4px;
+    color: #4caf50;
+    background: #ffffff00;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+.button:hover{
+    background: #4caf50;
+    color: white;
+}
+
+.second-section .button{
+    border: 4px solid #db3232;
+    color: #db3232;
+}
+.second-section .button:hover{
+    background: #db3232;
+    color: white;
+}
+img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.first-section h1:first-of-type{
+    font-size: 64px;
+}
+.first-section h1:nth-child(2){
+    font-size: 48px;
+    color: #4caf50;
+}
+.second-section h1:first-of-type{
+    font-size: 64px;
+}
+.second-section h1:nth-child(2){
+    font-size: 48px;
+    color: #db3232;
+}
+.third-section h1:first-of-type{
+    font-size: 64px;
+}
+.third-section h1:nth-child(2){
+    font-size: 48px;
+    color: #4caf50;
+}
+@media screen and (max-width: 1000px ){
+    .column-33,.column-66{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        margin: auto;
+    }
 }
