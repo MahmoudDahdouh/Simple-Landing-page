@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding: 64px
+}
+
+/* Header/logo Title */
+.header {
+    background-image: linear-gradient(#000000bd, #000000bd), url("../assests/images/Hanging-various-pictures-on-the-wall.jpg");
+    text-align: center;
+    color: white;
+    margin: auto;
+    height: 600px;
+}
+
+/* nav bar*/
+.header nav {
+    width: 100%;
+    background-color: #0000007c;
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.header nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: ease all 0.2s;
+    float: left;
+}
+
+.header nav a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+/* Increase the font size of the heading */
+.header-title {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    transition: ease all 1s;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 64px;
+    color: #4caf50;
+}
+
+.header p {
+    font-size: 32px
+}
+
+span {
+    font-size: 24px;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-66 {
+    float: left;
+    width: 66.6666666666%;
+    padding: 20px;
+}
+
+.column-33 {
+    float: left;
+    width: 33.33333333%;
+    padding: 20px;
+}
+
+.button {
+    border: 4px solid #4caf50;
+    border-radius: 4px;
+    color: #4caf50;
+    background: #ffffff00;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all ease 0.2s;
+}
+
+.button:hover {
+    background: #4caf50;
+    color: white;
+}
+
+.second-section .button {
+    border: 4px solid #db3232;
+    color: #db3232;
+}
+
+.second-section .button:hover {
+    background: #db3232;
+    color: white;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+footer {
+    background: #222222;
+    min-height: 150px;
+    color: #d3d3d3;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .links h2 {
+    font-size: 20px;
+}
+
+footer .links ul {
+    list-style-type: none;
+}
+footer .links ul li{
+    padding: 4px;
+}
+footer .links ul li a {
+    text-decoration: none;
+    color: #d3d3d3;
+    font-size: 16px;
+}
+footer .contact{
+    display: block;
+    margin: auto;
+}
+footer .contact>*{
+width: 100%;
+margin: 8px;
+padding: 8px;
+}
+footer .contact .send-btn{
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #333;
+    padding: 14px 28px;
+    transition: all ease 0.2s;
+    font-size: 18px
+}
+footer .contact .send-btn:hover{
+    background: #111;
+
+}
+
+.footer-bottom {
+    background: #333333;
+    padding: 16px;
+    color: #d3d3d3;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+/* Responsive design*/
+@media screen and (max-width: 1000px) {
+
+    .column-33,
+    .column-66 {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        margin: auto;
+    }
+
+
+}
